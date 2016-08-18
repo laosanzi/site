@@ -7,13 +7,15 @@
 
     
 
-    <title>彙整：2016/8 | </title>
+    <title>spring service中获取session | </title>
     <meta name="author" content="Binge">
+    
+    <meta name="description" content="Spring 在service层中如何获取session？1234ServletRequestAttributes sAtts =    (ServletRequestAttributes)RequestContextHolder.currentRequestAttributes();HttpSer">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="spring service中获取session"/>
     <meta property="og:site_name" content="Binge"/>
 
     
@@ -193,64 +195,63 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper indigo">
-        <span class="breadcrumb">當前位置（彙整）</span>
+        <span class="breadcrumb">當前位置（分類目錄）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/java/">java</a>
+
+
         
 
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>spring service中获取session</h1>
+    
 
 
-    <ul class="collapsible mt-0" data-collapsible="accordion">
+            </div>
+            <time class="pink-link-context" datetime="2016-08-09T16:18:24.000Z"><a href="/2016/08/10/2016-08-15-spring-service中获取session/">2016-08-10</a></time>
+
+            
+    <div class="tags-row">
         
+            <a href="/tags/spring/" class="chip pink lighten-1">spring</a>
         
-            <li>
-                <div class="collapsible-header active">
-                    <i class="fa fa-archive"></i>2016
-                </div>
-                <div class="collapsible-body">
-                    <div class="collection">
-                        
-                            <a href="/2016/08/18/hello-world/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-08-18T13:37:08.359Z">2016-08-18</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                Hello World
-                            </a>
-                        
-                            <a href="/2016/08/17/2016-08-17-java-bean的set方法另一种方式/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-08-17T00:00:00.000Z">2016-08-17</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                java bean的set方法另一种方式
-                            </a>
-                        
-                            <a href="/2016/08/15/2016-08-15-markdown/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-08-15T12:39:36.000Z">2016-08-15</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                Markdown语法
-                            </a>
-                        
-                            <a href="/2016/08/10/2016-08-15-spring-service中获取session/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-08-09T16:18:24.000Z">2016-08-10</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                spring service中获取session
-                            </a>
-                        
-                            <a href="/2016/08/07/2016-08-15-2016.8.7开篇/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-08-07T00:00:00.000Z">2016-08-07</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                2016.8.7开篇
-                            </a>
-                        
-                    </div>
-                </div>
-            </li>
+            <a href="/tags/session/" class="chip pink lighten-1">session</a>
         
-    </ul>
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#Spring-在service层中如何获取session？"><span class="section table-of-contents-text">Spring 在service层中如何获取session？</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <h5 id="Spring-在service层中如何获取session？"><a href="#Spring-在service层中如何获取session？" class="headerlink" title="Spring 在service层中如何获取session？"></a>Spring 在service层中如何获取session？</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ServletRequestAttributes sAtts =</div><div class="line">    (ServletRequestAttributes)RequestContextHolder.currentRequestAttributes();</div><div class="line">HttpServletRequest req = sAtts.getRequest();</div><div class="line">HttpSession session = req.getSession();</div></pre></td></tr></table></figure>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
 
 
 </div>

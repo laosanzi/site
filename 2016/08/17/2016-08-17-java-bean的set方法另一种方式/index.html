@@ -7,13 +7,16 @@
 
     
 
-    <title>彙整：2016/8 | </title>
+    <title>java bean的set方法另一种方式 | </title>
     <meta name="author" content="Binge">
+    
+    <meta name="description" content="直接上示例：
+1234567891011121314151617181920212223private String name;private int age;private List&amp;lt;String&amp;gt; friends;public Foo setName(String name) &amp;#1">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="java bean的set方法另一种方式"/>
     <meta property="og:site_name" content="Binge"/>
 
     
@@ -193,64 +196,65 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper indigo">
-        <span class="breadcrumb">當前位置（彙整）</span>
+        <span class="breadcrumb">當前位置（分類目錄）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/java/">java</a>
+
+
         
 
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>java bean的set方法另一种方式</h1>
+    
 
 
-    <ul class="collapsible mt-0" data-collapsible="accordion">
+            </div>
+            <time class="pink-link-context" datetime="2016-08-17T00:00:00.000Z"><a href="/2016/08/17/2016-08-17-java-bean的set方法另一种方式/">2016-08-17</a></time>
+
+            
+    <div class="tags-row">
         
+            <a href="/tags/bean/" class="chip pink lighten-1">bean</a>
         
-            <li>
-                <div class="collapsible-header active">
-                    <i class="fa fa-archive"></i>2016
-                </div>
-                <div class="collapsible-body">
-                    <div class="collection">
-                        
-                            <a href="/2016/08/18/hello-world/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-08-18T13:37:08.359Z">2016-08-18</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                Hello World
-                            </a>
-                        
-                            <a href="/2016/08/17/2016-08-17-java-bean的set方法另一种方式/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-08-17T00:00:00.000Z">2016-08-17</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                java bean的set方法另一种方式
-                            </a>
-                        
-                            <a href="/2016/08/15/2016-08-15-markdown/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-08-15T12:39:36.000Z">2016-08-15</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                Markdown语法
-                            </a>
-                        
-                            <a href="/2016/08/10/2016-08-15-spring-service中获取session/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-08-09T16:18:24.000Z">2016-08-10</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                spring service中获取session
-                            </a>
-                        
-                            <a href="/2016/08/07/2016-08-15-2016.8.7开篇/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-08-07T00:00:00.000Z">2016-08-07</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                2016.8.7开篇
-                            </a>
-                        
-                    </div>
-                </div>
-            </li>
+            <a href="/tags/set方法/" class="chip pink lighten-1">set方法</a>
         
-    </ul>
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>直接上示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">private</span> String name;</div><div class="line"></div><div class="line"><span class="keyword">private</span> <span class="keyword">int</span> age;</div><div class="line"></div><div class="line"><span class="keyword">private</span> List&lt;String&gt; friends;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> Foo <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> Foo <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> age)</span> </span>&#123;</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> Foo <span class="title">setFriends</span><span class="params">(List&lt;String&gt; friends)</span> </span>&#123;</div><div class="line">    <span class="keyword">this</span>.friends = friends;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line">...get方法...</div></pre></td></tr></table></figure>
+<p>好处：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Foo foo = <span class="keyword">new</span> Foo();</div><div class="line">foo.setName(<span class="string">"Tom"</span>)</div><div class="line">   .setAge(<span class="number">25</span>)</div><div class="line">   .setFriends(Lists.newArrayList(<span class="string">"Jack"</span>, <span class="string">"Lily"</span>));</div></pre></td></tr></table></figure>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
 
 
 </div>
