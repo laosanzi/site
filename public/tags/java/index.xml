@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site </title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/java/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2016-08-23 23:12:50 &#43;0800 CST</updated>
+
+    
+      
+        <item>
+          <title>good to great</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/good-to-great/</link>
+          <pubDate>Tue, 23 Aug 2016 23:12:50 CST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/good-to-great/</guid>
+          <description>
+
+&lt;p&gt;I read &lt;strong&gt;Good to Great in January 2016&lt;/strong&gt;. An awesome read sharing detailed analysis on how good companies became great.&lt;/p&gt;
+
+&lt;h1 id=&#34;标题&#34;&gt;标题&lt;/h1&gt;
+
+&lt;h2 id=&#34;标题-1&#34;&gt;标题&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public static void main(String[] args) {
+	System.out.println(&amp;quot;Hello, world!&amp;quot;);
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;天门中断楚江开。&lt;/p&gt;
+
+&lt;p&gt;同是天涯沦落人&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
